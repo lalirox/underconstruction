@@ -249,14 +249,16 @@
     </div>
       <footer class="footer">
         <div class="container text-center">
-          	<title>Efecto Prendido y Apagado de Texto en HTML</title>
+          <title>Efecto Prendido y Apagado de Texto en HTML</title>
 	<style>
 		#texto {
 		  color: black;
+		  background-color: transparent;
+		  text-shadow: 0 0 4px black;
 		}
-		.prendido {
+		#texto.prendido {
 		  color: white;
-		  background-color: black;
+		  text-shadow: 0 0 4px white;
 		}
 	</style>
 </head>
@@ -273,7 +275,7 @@
 		  alternar();
 		}, 1000);
 	</script>
-          <span>para venta de dominio escribe a: nuevoleonventas@yahoo.com </span>
+          
         </div>
       </footer>
 
