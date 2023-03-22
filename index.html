@@ -249,7 +249,34 @@
     </div>
       <footer class="footer">
         <div class="container text-center">
-        <p> Para la compra de este dominio escribe a: nuevoleonventas@yahoo.com<br>To purchase this domain write to: nuevoleonventas@yahoo.com</p>
+        <title>Efecto Prendido y Apagado de Texto en HTML</title>
+	<style>
+		#texto {
+		  color: black;
+		  background-color: transparent;
+		  text-shadow: 0 0 4px black;
+		  font-weight: bold;
+		  font-size: 18px;
+		}
+		#texto.prendido {
+		  color: grey;
+		  text-shadow: 0 0 4px white;
+		}
+	</style>
+</head>
+<body>
+	<p id="texto">Para la compra de este dominio escribe a: nuevoleonventas@yahoo.com<br>To purchase this domain write to: nuevoleonventas@yahoo.com</p>
+
+	<script>
+		function alternar() {
+		  var texto = document.getElementById("texto");
+		  texto.classList.toggle("prendido");
+		}
+
+		setInterval(function() {
+		  alternar();
+		}, 1000);
+	</script>
         </div>
       </footer>
 
