@@ -249,6 +249,30 @@
     </div>
       <footer class="footer">
         <div class="container text-center">
+          	<title>Efecto Prendido y Apagado de Texto en HTML</title>
+	<style>
+		#texto {
+		  color: black;
+		}
+		.prendido {
+		  color: white;
+		  background-color: black;
+		}
+	</style>
+</head>
+<body>
+	<p id="texto">Para venta de dominio escribe a: nuevoleonventas@yahoo.com</p>
+
+	<script>
+		function alternar() {
+		  var texto = document.getElementById("texto");
+		  texto.classList.toggle("prendido");
+		}
+
+		setInterval(function() {
+		  alternar();
+		}, 1000);
+	</script>
           <span>para venta de dominio escribe a: nuevoleonventas@yahoo.com </span>
         </div>
       </footer>
